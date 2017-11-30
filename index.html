@@ -7,17 +7,23 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="container">
-            <script>
-                var num = prompt("numero?");
-                document.write("Taula de multiplicar de: "+num);
-                num=parseInt;
-
-                for (var x = 1; x <= 10; x++) {
-            	r=num*x;
-            	document.write(num+"x"+x+"="+ r + "<br>");
-                }
-            </script>
-        </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <script type= "text/javascript">
+                        var nr;
+                        nr=prompt('Ingrese un numero(1-10)','');
+                        nr=parseInt(nr);        
+                        var x=0;
+                        
+                        for (x = 1; x <= 10; x++) {
+                        tabel=nr*x;
+                        document.write("<tr><td>");
+                        document.write(nr+" x "+x+" = "+ tabel + "<br>");
+                        document.write("</td></tr>");
+                        }
+        
+                    </script>
+                </table>
+            </div>
     </body>
 </html>
